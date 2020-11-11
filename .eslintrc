@@ -1,0 +1,36 @@
+{
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "yoc-node"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "max-params": "off",
+    "no-unused-expressions": "off",
+    "no-useless-constructor": "off",
+    "no-empty-function": "off",
+    "class-methods-use-this": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-unused-expressions": ["error"],
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "no-unused-vars": "warn",
+    "@typescript-eslint/member-delimiter-style": [
+      "error",
+      {
+        "multiline": {
+          "delimiter": "none",
+          "requireLast": false
+        },
+        "singleline": {
+          "delimiter": "comma",
+          "requireLast": false
+        }
+      }
+    ]
+  }
+}
